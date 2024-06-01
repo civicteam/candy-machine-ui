@@ -123,8 +123,12 @@ export const MintButton = ({
               console.log("after: ", gatewayStatus);
             }
           } else if (
-            network === "ttib7tuX8PTWPqFsmUFQTj78MbRhUmqxidJRDv4hRRE" ||
-            network === "tibePmPaoTgrs929rWpu755EXaxC7M3SthVCf6GzjZt"
+            [
+              "ttib7tuX8PTWPqFsmUFQTj78MbRhUmqxidJRDv4hRRE",
+              "tibePmPaoTgrs929rWpu755EXaxC7M3SthVCf6GzjZt",
+              "tvaaHL9BSgZGLRAqUrx1Fzs2Uneb6BWGdnYuqrFoXm3",
+              "tunQheuPpHhjjsbrUDp4rikqYez9UXv4SXLRHf9Kzsv"
+            ].includes(network)
           ) {
             setClicked(true);
             const gatewayToken = await findGatewayToken(

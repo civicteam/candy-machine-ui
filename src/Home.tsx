@@ -597,9 +597,10 @@ const Home = (props: HomeProps) => {
                     gatekeeperNetwork={
                       candyMachine?.state?.gatekeeper?.gatekeeperNetwork
                     }
+                    stage="dev"
                     clusterUrl={rpcUrl}
                     cluster={cluster}
-                    options={{ autoShowModal: false }}
+                    options={{ autoShowModal: true }}
                   >
                     <MintButton
                       candyMachine={candyMachine}
